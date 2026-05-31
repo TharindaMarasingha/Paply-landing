@@ -31,6 +31,7 @@ export default function Footer() {
           <div className={styles.column}>
             <h4>Company</h4>
             <div className={styles.links}>
+              <Link href="/about" className={styles.link}>About Creator</Link>
               <a href="https://www.kaldor.dev/about" target="_blank" rel="noopener noreferrer" className={styles.link}>About Us</a>
               <a href="https://www.kaldor.dev/careers" target="_blank" rel="noopener noreferrer" className={styles.link}>Careers</a>
               <a href="https://www.kaldor.dev/blog" target="_blank" rel="noopener noreferrer" className={styles.link}>Blog</a>
@@ -62,17 +63,7 @@ export default function Footer() {
           </p>
           
           <div className={styles.bottomRight}>
-            <p className={styles.founderCredit}>
-              Founder & Lead Developer:{" "}
-              <a 
-                href="https://www.tharinda.me" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className={styles.founderLink}
-              >
-                Tharinda Marasingha
-              </a>
-            </p>
+
             <div className={styles.social}>
               <a href="https://www.kaldor.dev" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Kaldor">
                 <MessageCircle size={20} />
