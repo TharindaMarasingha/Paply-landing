@@ -1,0 +1,295 @@
+.section {
+  padding: 8rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cardWrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.glow {
+  position: absolute;
+  inset: -15px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+  filter: blur(25px);
+  opacity: 0.25;
+  border-radius: 2rem;
+  z-index: 0;
+  animation: pulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.15; transform: scale(0.98); }
+  100% { opacity: 0.35; transform: scale(1.02); }
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+  border: 1px solid var(--card-border);
+}
+
+.cardHeader {
+  padding: 3rem 3rem 2rem;
+  text-align: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.heartIcon {
+  animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  10%, 30% { transform: scale(1.15); }
+  20%, 40% { transform: scale(1.05); }
+}
+
+.planName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.price {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.currency {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modalContent {
+  background: var(--bg-color);
+  border: 1px solid var(--card-border);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.closeBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.modalIconContainer {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  background: var(--primary-glow);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+  animation: pulse-slow 3s infinite;
+}
+
+@keyframes pulse-slow {
+  0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(99, 102, 241, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+}
+
+.modalTitle {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.modalText {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.modalGithubEmbed {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  transform: scale(1.2); /* Make the star button slightly larger in the modal */
+}
+
+.modalFooter {
+  border-top: 1px solid var(--card-border);
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.countdown {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.countdown span {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.skipBtn {
+  font-size: 0.875rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.amount {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.period {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  align-self: flex-end;
+  margin-bottom: 0.75rem;
+  margin-left: 0.25rem;
+}
+
+.description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--card-border), transparent);
+}
+
+.cardBody {
+  padding: 2rem 3rem 3rem;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+[data-theme='light'] .cardBody {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+}
+
+.checkIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.actionBtn {
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .cardHeader {
+    padding: 2.5rem 2rem 1.5rem;
+  }
+  
+  .cardBody {
+    padding: 1.5rem 2rem 2.5rem;
+  }
+}
