@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+<img width="400" height="400" alt="paply_minimal_logo_1778529468201" src="https://github.com/user-attachments/assets/5b2da2de-836e-46bc-b019-cd0ae746eda2" />
+
 ## Getting Started
 
 First, run the development server:
