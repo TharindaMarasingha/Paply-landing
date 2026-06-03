@@ -10,7 +10,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Paply | Modern Platform",
+  title: "Paply",
   description: "Experience the next generation platform with Paply. Beautiful, fast, and modern.",
   keywords: ["Paply", "Platform", "Modern", "Fast", "Aesthetic"],
 };
