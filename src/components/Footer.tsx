@@ -31,10 +31,10 @@ export default function Footer() {
           <div className={styles.column}>
             <h4>Company</h4>
             <div className={styles.links}>
-              <Link href="#" className={styles.link}>About Us</Link>
+              <a href="https://www.kaldor.dev/about" target="_blank" rel="noopener noreferrer" className={styles.link}>About Us</a>
               <a href="https://www.kaldor.dev/careers" target="_blank" rel="noopener noreferrer" className={styles.link}>Careers</a>
-              <Link href="#" className={styles.link}>Blog</Link>
-              <Link href="#" className={styles.link}>Contact</Link>
+              <a href="https://www.kaldor.dev/blog" target="_blank" rel="noopener noreferrer" className={styles.link}>Blog</a>
+              <a href="https://www.kaldor.dev/contact" target="_blank" rel="noopener noreferrer" className={styles.link}>Contact</a>
             </div>
           </div>
 

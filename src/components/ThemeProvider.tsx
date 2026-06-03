@@ -1,7 +1,8 @@
 "use client";
 
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-import { type ThemeProviderProps } from "next-themes/dist/types";
+
+type ThemeProviderProps = React.ComponentProps<typeof NextThemesProvider>;
 
 // Filter out the specific React 19 warning about script tags injected by next-themes
 if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
