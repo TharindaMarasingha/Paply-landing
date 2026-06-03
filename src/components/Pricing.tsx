@@ -8,11 +8,11 @@ import { Check, ExternalLink, Heart, X, Star } from "lucide-react";
 
 const features = [
   "Unlimited Invoices & Quotations",
-  "AI-powered descriptions",
+  "AI powered descriptions",
   "No watermarks on PDFs",
-  "100% Private - data stays on device",
+  "100% Private (data stays on device)",
   "No account or login required",
-  "Community-driven updates",
+  "Community driven updates",
 ];
 
 export default function Pricing() {

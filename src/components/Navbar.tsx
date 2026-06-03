@@ -21,7 +21,7 @@ export default function Navbar() {
     <header className={`${styles.header} ${scrolled ? styles.headerScrolled : ""}`}>
       <div className={`container ${styles.nav}`}>
         <Link href="/" className={styles.logo}>
-          <Image src="/paply-logo-v3.png" alt="Paply Logo" width={32} height={32} />
+          <Image src="/paply-logo-v3.png" alt="Paply Logo" width={32} height={32} className={styles.logoImg} />
           <span>Paply</span>
         </Link>
         

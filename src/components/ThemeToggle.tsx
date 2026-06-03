@@ -12,6 +12,16 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     setMounted(true);
+
+    const checkMobileTheme = () => {
+      if (window.innerWidth <= 768) {
+        setTheme("system");
+      }
+    };
+
+    checkMobileTheme();
+    window.addEventListener("resize", checkMobileTheme);
+    return () => window.removeEventListener("resize", checkMobileTheme);
   }, []);
 
   if (!mounted) {

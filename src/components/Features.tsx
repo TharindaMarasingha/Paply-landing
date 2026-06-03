@@ -17,7 +17,7 @@ const features = [
     icon: Lock,
   },
   {
-    title: "AI-Powered Descriptions",
+    title: "AI Powered Descriptions",
     description: "Let AI write your line item descriptions. Just provide the context and we do the rest.",
     icon: Sparkles,
   },

@@ -17,7 +17,7 @@ export default function Hero() {
         >
           <div className={styles.badge}>
             <Sparkles size={16} className={styles.badgeHighlight} />
-            <span>AI-powered invoicing is here</span>
+            <span>AI powered invoicing is here</span>
             <ArrowRight size={14} />
           </div>
         </motion.div>
@@ -39,7 +39,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           Paply uses AI to craft your descriptions for you. Drop in your details, 
-          grab your PDF, and get paid — no account, no waiting, no hassle.
+          grab your PDF, and get paid. No account, no waiting, no hassle.
         </motion.p>
 
         <motion.div

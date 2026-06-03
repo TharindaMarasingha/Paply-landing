@@ -56,14 +56,13 @@
 }
 
 .founderLink {
-  color: var(--text-primary);
-  font-weight: 500;
+  color: var(--text-secondary);
   transition: color 0.2s ease;
   text-decoration: none;
 }
 
 .founderLink:hover {
-  color: var(--primary-color);
+  color: var(--text-primary);
 }
 
 .bottom {

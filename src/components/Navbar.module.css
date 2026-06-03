@@ -59,4 +59,17 @@
   .links {
     display: none;
   }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .logoImg {
+    width: 22px !important;
+    height: 22px !important;
+  }
+  .actions {
+    display: none;
+  }
+  .nav {
+    justify-content: center;
+  }
 }

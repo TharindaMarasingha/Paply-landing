@@ -111,7 +111,6 @@
 
 @media (max-width: 768px) {
   .toggle, .skeleton {
-    bottom: 1.5rem;
-    right: 1.5rem;
+    display: none;
   }
 }
